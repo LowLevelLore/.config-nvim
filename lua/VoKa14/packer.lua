@@ -48,10 +48,5 @@ return require('packer').startup(function(use)
     use { "akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
     end }
-    use({
-        "andrewferrier/wrapping.nvim",
-        config = function()
-            require("wrapping").setup()
-        end,
-    })
+    use({ "preservim/nerdtree" })
 end)
